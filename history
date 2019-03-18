@@ -1,0 +1,6 @@
+docker build -t ruben/nodewebapp .
+docker images | grep nodew
+docker run -p 49160:8080 -d ruben/nodewebapp
+docker ps | grep nodewe
+docker logs <container>
+curl -i http://localhost:49160
